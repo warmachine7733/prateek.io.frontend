@@ -1,0 +1,75 @@
+.introImage {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  background-color: rebeccapurple;
+}
+
+.caption {
+  text-align: center;
+  width: 100%;
+  top: 42%;
+  position: absolute;
+}
+.caption > h4 {
+  margin-bottom: 30px;
+  color: #d6b161;
+  font-size: 30px;
+}
+
+.caption > h1 {
+  margin-bottom: 30px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: #fff;
+}
+.caption > h2 {
+  margin-bottom: 30px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 5s steps(0, end), blink 0.75s step-end;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+}
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@media (max-width: 700px) {
+  .caption > h4 {
+    font-size: 25px;
+  }
+  .caption > h1 {
+    font-size: 30px;
+  }
+  .caption > h2 {
+    font-size: 22px;
+  }
+}

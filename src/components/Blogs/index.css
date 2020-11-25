@@ -1,0 +1,194 @@
+.blogsWrapper {
+  /* height: 100%; */
+  height: 740px;
+  padding: 90px;
+  /* border: 1px solid; */
+  text-align: center;
+  display: flow-root;
+  margin-bottom: 30px;
+  min-height: 300px;
+}
+.blogsWrapper > h4 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+}
+.blogData {
+  display: flow-root;
+}
+.individualBlogs {
+  float: left;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 150px;
+  margin-bottom: 1%;
+  background-color: #f7f7f7;
+}
+
+.blogDescription {
+  float: left;
+  width: 75%;
+  text-align: initial;
+  padding: 1%;
+  position: relative;
+  height: 100%;
+}
+.blogImage {
+  float: right;
+  width: 25%;
+  height: 100%;
+}
+.blogImage > img {
+  padding: 2%;
+  max-height: 100%;
+  height: 100%;
+  float: right;
+  width: 100%;
+}
+.blogTitle {
+  font-size: 20px;
+  font-weight: 400;
+}
+.blogStacks {
+  margin-bottom: 10%;
+}
+.blogTimeStamp {
+  line-height: 1.4;
+  font-size: 12px;
+}
+.blogInfoWrapper {
+  position: absolute;
+  bottom: 2%;
+}
+@media (max-width: 700px) {
+  .blogsWrapper {
+    padding: 0px;
+    height: 100%;
+    padding-bottom: 40px;
+  }
+  .individualBlogs {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 100px;
+  }
+  .blogDescription {
+    width: 60%;
+  }
+  .blogImage {
+    width: 40%;
+  }
+  .blogTitle {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .blogStacks {
+    margin-bottom: 3%;
+    font-size: 13px;
+  }
+  .blogTimeStamp {
+    font-size: 8px;
+  }
+}
+
+/*loading blogs*/
+
+.loadingWrapper {
+  /* margin: 30px; */
+
+  /* width: 360px; */
+  /* height: 640px; */
+}
+
+.wrapper-cell {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 30px;
+  /* float: left; */
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 150px;
+  margin-bottom: 1%;
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+.animated-background,
+.image,
+.text-line {
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: placeHolderShimmer;
+  animation-name: placeHolderShimmer;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #f6f6f6;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    color-stop(8%, #f6f6f6),
+    color-stop(18%, #f0f0f0),
+    color-stop(33%, #f6f6f6)
+  );
+  background: linear-gradient(to right, #f6f6f6 8%, #f0f0f0 18%, #f6f6f6 33%);
+  background-size: 800px 104px;
+  height: 96px;
+  position: relative;
+}
+
+.image {
+  height: 100%;
+  width: 25%;
+}
+
+.text {
+  padding-right: 2%;
+  width: 75%;
+}
+
+.text-line {
+  height: 100%;
+}
+@media (max-width: 700px) {
+  .wrapper-cell {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    height: 100px;
+  }
+  .loadingWrapper {
+    padding: 0px;
+  }
+  .text {
+    width: 60%;
+    padding-right: 1%;
+  }
+  .image {
+    width: 40%;
+  }
+}

@@ -1,0 +1,77 @@
+.headerSolid {
+  position: fixed;
+  background-color: indigo !important;
+  z-index: 1;
+  width: 100%;
+  transition: 1s;
+}
+
+.headerTransparent {
+  position: absolute;
+  background-color: transparent !important;
+  z-index: 1;
+  width: 100%;
+  height: 54px !important;
+  line-height: 50px !important;
+}
+/*media for header transparent*/
+@media (max-width: 700px) {
+  .headerTransparent {
+    height: 30px;
+    padding: 0 10px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 30px;
+    background: #001529;
+  }
+}
+
+.userNameTransparent {
+  color: white !important;
+  font-size: 25px;
+}
+.userNameSolid {
+  color: white !important;
+  font-size: 25px;
+}
+
+@media (max-width: 700px) {
+  .userNameTransparent {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .userNameSolid {
+    font-size: 16px;
+  }
+}
+
+.navTextsTransparent {
+  /* color: white !important; */
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .navTextsTransparent {
+    display: none;
+  }
+}
+.navTextsSolid {
+  /* color: white !important; */
+  font-size: 18px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .navTextsSolid {
+    display: none;
+  }
+  .ant-layout-header {
+    height: 45px !important;
+    padding: 0 20px !important;
+
+    line-height: 45px !important;
+  }
+}

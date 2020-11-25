@@ -1,0 +1,110 @@
+.resumeContainer {
+  padding: 90px;
+  /* border: 1px solid; */
+  text-align: center;
+  padding-bottom: 0px;
+  min-height: 600px;
+}
+.resumeContainer > h4 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f4f4f4;
+  position: relative;
+}
+.resumeContainer > h4 :after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background: #d6b161;
+  height: 1px;
+  width: 70px;
+}
+.togglerContainer {
+  /* width: 80%; */
+  /* border: 1px solid; */
+  text-align: -webkit-center;
+}
+/* .togglerContainer > div {
+  float: left;
+} */
+.toggleIcons {
+  text-align: -webkit-center;
+}
+.toggleIcons > table > tbody > tr {
+}
+.expTab {
+  /* padding: 5px 20px 5px 0px; */
+  display: inline-block;
+  padding: 4px 30px;
+  background: #444;
+  color: #fff;
+  border-radius: 30px;
+  margin: 0 -2px;
+  cursor: pointer;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.expTab > span {
+  color: #fff !important;
+}
+.eduTab {
+  /* padding: 5px 0px 5px 20px;
+  padding: 5px 20px 5px 0px; */
+  display: inline-block;
+  padding: 4px 30px;
+  background: #444;
+  color: #fff;
+  border-radius: 30px;
+  margin: 0 -2px;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.eduTab > span {
+  color: #fff !important;
+}
+.stepsContainer {
+  margin: 30px 0px 0px 40px !important;
+  transition: 1s;
+}
+.ant-steps {
+  line-height: 2 !important;
+}
+.stepsWrapper {
+  margin: 5% 20%;
+  margin-bottom: 0%;
+}
+.ant-steps-item-subtitle {
+  display: block !important;
+  margin-left: 1px !important;
+  color: #d6b161 !important;
+  font-weight: normal !important;
+  font-size: 12px !important;
+}
+.ant-steps-item-title {
+  font-size: 15px;
+}
+@media (max-width: 700px) {
+  .resumeContainer {
+    display: inline-block;
+    padding: 0px;
+    /* height: 100%; */
+    width: 100%;
+    min-height: 450px;
+  }
+  .resumeContainer > h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .stepsWrapper {
+    margin: 5% 0%;
+  }
+  .ant-steps-item-title {
+    font-size: 14px !important;
+    font-weight: 500;
+  }
+}
