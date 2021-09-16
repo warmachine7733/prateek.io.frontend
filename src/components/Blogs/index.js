@@ -2,12 +2,16 @@ import React from "react";
 import { BlogLoading } from "./BlogLoading";
 import "./index.css";
 
-const openPost = (link) => {
-  window.open(link, "_blank");
-};
 
-export const Blogs = ({ blogs, blogLoading }) => {
+
+export const Blogs = ({ blogs, blogLoading ,history}) => {
   // console.log(blogLoading, blogs);
+  const openPost = (link) => {
+    window.open(link, "_blank");
+    // console.log("history",history)
+    // history.push('/blogs')
+  
+  };
   return (
     <div className="blogsWrapper">
       <h4>Blogs</h4>

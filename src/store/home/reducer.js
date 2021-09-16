@@ -3,6 +3,7 @@ const initialState = {
   mediumId: "@prateekjena7733",
   blogLoading: true,
   blogs: [],
+  currentYear:new Date().getFullYear(),
   socialIds: [
     {
       name: "stack-overflow",
@@ -11,16 +12,7 @@ const initialState = {
     {
       name: "medium",
       link: "https://medium.com/@prateekjena7733",
-    },
-    {
-      name: "linkedin",
-      link: "https://www.linkedin.com/in/prateek-jena-a3560317b/",
-    },
-    {
-      name: "facebook",
-      link: "https://www.facebook.com/prateek.jena.904",
-    },
-    { name: "instagram", link: "https://www.instagram.com/prateikzena/" },
+    }
   ],
 
   career: {

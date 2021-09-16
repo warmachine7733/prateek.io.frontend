@@ -3,24 +3,35 @@ import Particles from "react-particles-js";
 
 import "./index.css";
 
+
 export class Intro extends React.Component {
   state = {
     whoami: ["Web Developer", "Linux Enthusiast", "PC Gamer"],
   };
   setCurrentRole = () => {
-    // this.state.whoami.map(each=>)
-    // setTimeout(,50)
-  };
+    //chnage in odd and even months
+    const currentMonth = new Date().getMonth()
+    if(currentMonth%2===0){
+      this.setState({index:0})
+    }else{
+      this.setState({index:1})
+
+    }
+
+  // console.log("ok month",new Date().getMonth())
+  }
   componentDidMount() {
     this.setCurrentRole();
   }
 
   render() {
+    // console.log("props",this.props)
     return (
       <div className="intro" style={{ height: this.props.availHeight }}>
         <Particles
           className="introImage"
           style={{ height: this.props.availHeight }}
+          params={this.props.particles[this.state.index]}
           // params={{
           //   particles: {
           //     number: {
@@ -39,57 +50,57 @@ export class Intro extends React.Component {
           //     },
           //   },
           // }}
-          params={{
-            particles: {
-              number: {
-                value: 160,
-                density: {
-                  enable: false,
-                },
-              },
-              size: {
-                value: 3,
-                random: true,
-                anim: {
-                  speed: 4,
-                  size_min: 0.3,
-                },
-              },
-              line_linked: {
-                enable: false,
-              },
-              move: {
-                random: true,
-                speed: 1,
-                direction: "top",
-                out_mode: "out",
-              },
-            },
-            interactivity: {
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: "bubble",
-                },
-                onclick: {
-                  enable: true,
-                  mode: "repulse",
-                },
-              },
-              modes: {
-                bubble: {
-                  distance: 250,
-                  duration: 2,
-                  size: 0,
-                  opacity: 0,
-                },
-                repulse: {
-                  distance: 400,
-                  duration: 4,
-                },
-              },
-            },
-          }}
+          // params={{
+          //   particles: {
+          //     number: {
+          //       value: 160,
+          //       density: {
+          //         enable: false,
+          //       },
+          //     },
+          //     size: {
+          //       value: 3,
+          //       random: true,
+          //       anim: {
+          //         speed: 4,
+          //         size_min: 0.3,
+          //       },
+          //     },
+          //     line_linked: {
+          //       enable: false,
+          //     },
+          //     move: {
+          //       random: true,
+          //       speed: 1,
+          //       direction: "top",
+          //       out_mode: "out",
+          //     },
+          //   },
+          //   interactivity: {
+          //     events: {
+          //       onhover: {
+          //         enable: true,
+          //         mode: "bubble",
+          //       },
+          //       onclick: {
+          //         enable: true,
+          //         mode: "repulse",
+          //       },
+          //     },
+          //     modes: {
+          //       bubble: {
+          //         distance: 250,
+          //         duration: 2,
+          //         size: 0,
+          //         opacity: 0,
+          //       },
+          //       repulse: {
+          //         distance: 400,
+          //         duration: 4,
+          //       },
+          //     },
+          //   },
+          // }}
 
           // params={{
           //   particles: {
@@ -138,7 +149,8 @@ export class Intro extends React.Component {
         />
         <div className="caption">
           <h4 className="greetings">Hi</h4>
-          <h1>I AM PRATEEK JENA</h1>
+          {/* <h1>I AM PRATEEK JENA,</h1> */}
+          <h2>I am a Web Developer</h2>
           {/* <h2>Web Developer</h2> */}
         </div>
       </div>

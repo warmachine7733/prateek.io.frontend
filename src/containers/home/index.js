@@ -7,9 +7,10 @@ import { Career } from "../../components/Career";
 import { Blogs } from "../../components/Blogs";
 import { Contact } from "../../components/contact";
 import { connect } from "react-redux";
+import socketIOClient from "socket.io-client";
+
 
 import { getMediumPosts, ipLookUp } from "../../store/home/action";
-
 class Home extends React.Component {
   state = {
     headerStyle: "transparent",
@@ -17,6 +18,7 @@ class Home extends React.Component {
     textThemeColor: "#d6b161",
     selectedCareerTab: "work",
     selectedCareerData: [],
+    endPoint:'http://127.0.0.1:9000'
   };
   handleScroll = () => {
     // console.log("scrolldata", window.scrollY);
@@ -82,7 +84,7 @@ class Home extends React.Component {
     this.setState({ availHeight: window.screen.availHeight });
   };
   render() {
-    // console.log(this.state.selectedCareerData);
+    // console.log(this.props.history);
     return (
       <div
         className="wrapper"
@@ -100,7 +102,10 @@ class Home extends React.Component {
           textThemeColor={this.state.textThemeColor}
         />
         <div ref={(home) => (this.home = home)}>
-          <Intro availHeight={this.state.availHeight} />
+          <Intro 
+            availHeight={this.state.availHeight} 
+            particles ={this.props.particles}
+          />
         </div>
 
         <div
@@ -127,12 +132,14 @@ class Home extends React.Component {
             <Blogs
               blogs={this.props.blogs}
               blogLoading={this.props.blogLoading}
+              history = {this.props.history}
             />
           </div>
           <div ref={(contact) => (this.contact = contact)}>
             <Contact
               openSocialAccount={this.openSocialAccount}
               socialIds={this.props.socialIds}
+              currentYear={this.props.currentYear}
             />
           </div>
         </div>
@@ -148,6 +155,10 @@ class Home extends React.Component {
     this.props.ipLookUp();
     this.getAvailWindowHeight();
     this.props.getMediumPosts();
+    const socket = socketIOClient('http://localhost:8180/');
+    socket.on("connection",() => {
+      console.log("okau socket data")
+    });
   }
 }
 
@@ -157,6 +168,8 @@ const mapStateToProps = (state) => {
     socialIds: state.home.socialIds,
     blogs: state.home.blogs,
     blogLoading: state.home.blogLoading,
+    currentYear:state.home.currentYear,
+    particles:state.home.particleStyle
   };
 };
 const mapDispatchToProps = (dispatch) => {

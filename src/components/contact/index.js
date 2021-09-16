@@ -3,10 +3,10 @@ import "./index.css";
 import { DiMongodb } from "react-icons/di";
 import { SiRedux, SiFirebase } from "react-icons/si";
 import { FaNodeJs, FaReact } from "react-icons/fa";
-export const Contact = ({ socialIds, openSocialAccount }) => {
+export const Contact = ({ socialIds, openSocialAccount,currentYear }) => {
   return (
     <div className="contactContainer">
-      <div className="copyrightMsg">Copyright © 2020 prateek.io</div>
+      <div className="copyrightMsg">© {currentYear} prateek.io</div>
       <div className="socialIcon">
         {socialIds.map((each, i) => (
           <i

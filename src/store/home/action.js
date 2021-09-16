@@ -15,14 +15,19 @@ export const getMediumPosts = () => {
   return async (dispatch, getState) => {
     //   dispatch(handleLoading(true));
     try {
-      // dispatch(handleBlogLoading(true));
+      
+      dispatch(handleBlogLoading(true));
+      
+      const result = await axios.get(
+        "https://shielded-earth-72166.herokuapp.com/getBlogsFromDb"
+      );
       // const result = await axios.get(
-      //   "https://shielded-earth-72166.herokuapp.com/getBlogs"
+      //   "http://localhost:9000/getBlogsFromDb"
       // );
-      // const blogs = result.data;
-      // // console.log("blogs", blogs);
-      // dispatch(storeBlogs(blogs));
-      // dispatch(handleBlogLoading(false));
+      const blogs = result.data;
+      // console.log("blogs", blogs);
+      dispatch(storeBlogs(blogs));
+      dispatch(handleBlogLoading(false));
     } catch (error) {
       console.log(console.error);
     }
@@ -34,10 +39,14 @@ export const getMediumPosts = () => {
 
 export const ipLookUp = () => {
   return async (dispatch, getState) => {
-    var ip = await publicIp.v4();
-    //lookup hit
+    // var ip = await publicIp.v4();
+    // // lookup hit
     // await axios.post(
     //   "https://shielded-earth-72166.herokuapp.com/storeIpAndLocation",
+    //   { ip }
+    // );
+    // await axios.post(
+    //   "http://localhost:9000/storeIpAndLocation",
     //   { ip }
     // );
   };

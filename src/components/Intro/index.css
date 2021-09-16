@@ -30,6 +30,7 @@
 .caption > h2 {
   margin-bottom: 30px;
   font-weight: 100;
+  max-width: 410px;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 35px;
@@ -37,7 +38,7 @@
   display: inline-block;
   overflow: hidden;
   letter-spacing: 2px;
-  animation: typing 5s steps(0, end), blink 0.75s step-end;
+  animation: typing 5s steps(109), blink 1.25s step-end infinite;
   white-space: nowrap;
   font-size: 30px;
   font-weight: 700;
@@ -70,6 +71,7 @@
     font-size: 30px;
   }
   .caption > h2 {
-    font-size: 22px;
+    font-size: 14px;
+    max-width: 220px;
   }
 }
