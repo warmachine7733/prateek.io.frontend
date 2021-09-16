@@ -7,7 +7,6 @@ import { Career } from "../../components/Career";
 import { Blogs } from "../../components/Blogs";
 import { Contact } from "../../components/contact";
 import { connect } from "react-redux";
-import socketIOClient from "socket.io-client";
 
 
 import { getMediumPosts, ipLookUp } from "../../store/home/action";
