@@ -39,12 +39,12 @@ export const getMediumPosts = () => {
 
 export const ipLookUp = () => {
   return async (dispatch, getState) => {
-    // var ip = await publicIp.v4();
-    // // lookup hit
-    // await axios.post(
-    //   "https://shielded-earth-72166.herokuapp.com/storeIpAndLocation",
-    //   { ip }
-    // );
+    var ip = await publicIp.v4();
+    // lookup hit
+    await axios.post(
+      "https://shielded-earth-72166.herokuapp.com/storeIpAndLocation",
+      { ip }
+    );
     // await axios.post(
     //   "http://localhost:9000/storeIpAndLocation",
     //   { ip }
