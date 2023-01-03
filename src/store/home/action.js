@@ -18,12 +18,12 @@ export const getMediumPosts = () => {
       
       dispatch(handleBlogLoading(true));
       
-      const result = await axios.get(
-        "https://shielded-earth-72166.herokuapp.com/getBlogsFromDb"
-      );
       // const result = await axios.get(
-      //   "http://localhost:9000/getBlogsFromDb"
+      //   "https://shielded-earth-72166.herokuapp.com/getBlogsFromDb"
       // );
+      const result = await axios.get(
+        "https://prateek-io-server.vercel.app/getBlogsFromDb"
+      );
       const blogs = result.data;
       // console.log("blogs", blogs);
       dispatch(storeBlogs(blogs));
@@ -42,7 +42,7 @@ export const ipLookUp = () => {
     var ip = await publicIp.v4();
     // lookup hit
     await axios.post(
-      "https://shielded-earth-72166.herokuapp.com/storeIpAndLocation",
+      "https://prateek-io-server.vercel.app/storeIpAndLocation",
       { ip }
     );
     // await axios.post(
