@@ -1,5 +1,5 @@
 .about {
-  display: flow-root;
+  display: flex;
   padding: 90px;
 }
 .imageContainer {

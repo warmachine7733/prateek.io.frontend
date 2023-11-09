@@ -1,6 +1,6 @@
 import React from "react";
 // import Particles from "react-particles-js";
-
+import Snowfall from 'react-snowfall'
 import "./index.css";
 
 
@@ -27,7 +27,11 @@ export class Intro extends React.Component {
   render() {
     // console.log("props",this.props)
     return (
+      <>
+    
+    
       <div className="intro" style={{ height: this.props.availHeight }}>
+      <Snowfall/>
         <div
           className="introImage"
           style={{ height: this.props.availHeight }}
@@ -40,6 +44,7 @@ export class Intro extends React.Component {
           {/* <h2>Web Developer</h2> */}
         </div>
       </div>
+      </>
     );
   }
 }
