@@ -47,18 +47,18 @@ const initialState = {
       {
         name: "G.C.E,keonjhar",
         duration: "2012 - 2016",
-        description: "Mechanical Engineering",
+        description: "Mechanical Engineering (7.3 cgpa)",
       },
       {
         name: "B.C.S.T,Bhuabenswar",
         duration: "2010 - 2012",
-        description: "Science",
+        description: "Science (80% )",
       },
 
       {
         name: "M.P.C High School,Betnoti",
         duration: "2008 - 2010",
-        description: "",
+        description: "88%",
       },
       {
         name: "S.A.I.E.C,Betnoti",
