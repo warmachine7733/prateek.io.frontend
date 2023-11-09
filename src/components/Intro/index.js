@@ -28,8 +28,6 @@ export class Intro extends React.Component {
     // console.log("props",this.props)
     return (
       <>
-    
-    
       <div className="intro" style={{ height: this.props.availHeight }}>
       <Snowfall/>
         <div
