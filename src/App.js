@@ -1,7 +1,7 @@
 import React from "react";
 import Routes from "./routes";
 import { Provider } from "react-redux";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 
 import store from "./store";
 
