@@ -10,10 +10,10 @@ export const About = () => {
         <img src="/assets/myPic.jpg" alt="profileImg" />
       </div>
       <div className="detailsContainer">
-        <h4>More info about me</h4>
+        {/* <h4>More info about me</h4> */}
         <p>
           I am a passionate web developer with a keen mindset to
-          learn and implement new tech-stacks. My go to stack is React, Express and MongoDB.
+          learn and implement new tech-stacks. Dev stacks are React, Express and MongoDB.
         </p>
         <div className="personalDetails">
           <table>

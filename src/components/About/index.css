@@ -75,9 +75,12 @@
     /* width: 65%; */
     height: 100%;
     display: flow-root;
+    margin: 2px;
+    font-size: xx-small;
   }
   .detailsContainer > p {
-    text-align: justify;
+    text-align: center;
+    font-size: 12px;
   }
   .tableRow > td {
     max-width: 100%;
