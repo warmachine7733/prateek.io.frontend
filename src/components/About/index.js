@@ -12,13 +12,8 @@ export const About = () => {
       <div className="detailsContainer">
         <h4>More info about me</h4>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip
-          ex ea commodo
+          I am a passionate web developer with a keen mindset to
+          learn and implement new tech-stacks. My go to stack is React, Express and MongoDB.
         </p>
         <div className="personalDetails">
           <table>
