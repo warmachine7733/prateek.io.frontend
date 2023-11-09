@@ -18,8 +18,13 @@ const initialState = {
   career: {
     work: [
       {
+        name: "Development Bank of Singapore",
+        duration: "May'22 - Present",
+        description: "Associate",
+      },
+      {
         name: "Cognizant",
-        duration: "Jul'20 - Present",
+        duration: "Jul'20 - Mar'22",
         description: "Associate Projects",
       },
       {
@@ -28,7 +33,7 @@ const initialState = {
         description: "Software Developer",
       },
       {
-        name: "Stealth Mode Startup",
+        name: "Freelancing",
         duration: "Dec'18 - May'19",
         description: "Software Developer",
       },
