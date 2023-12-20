@@ -38,7 +38,7 @@ export class Intro extends React.Component {
         <div className="caption">
           <h4 className="greetings">Hi</h4>
           {/* <h1>I AM PRATEEK JENA,</h1> */}
-          <h2>I am Spider-man</h2>
+          <h2>I am a Web Developer</h2>
           {/* <h2>Web Developer</h2> */}
         </div>
       </div>
