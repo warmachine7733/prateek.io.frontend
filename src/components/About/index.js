@@ -3,16 +3,16 @@ import "./index.css";
 import { Typography } from "antd";
 const { Text } = Typography;
 
-export const About = () => {
+export const About = ({aboutText}) => {
   return (
     <div className="about">
-      <div className="imageContainer">
-        <img src="/assets/myPic.jpg" alt="profileImg" />
+      <div className="">
+        {/* <img src="/assets/myPic.jpg" alt="profileImg" /> */}
       </div>
-      <div className="detailsContainer">
+      <div className="">
         {/* <h4>More info about me</h4> */}
         <p>
-        I am a seasoned software developer with over 6 years and 1 month of experience in software development, specializing in web-based app development using technologies such as ReactJS, Redux, Material UI, Node.js, D3, npm, Firebase, Firestore, Bootstrap 4, and Context. My expertise spans various domains, including finance, telecom, social apps, HRM, property apps, and B2C app interactions for Verizon. I have a strong command of Git, Webpack 5, Babel, React Router v6, and have worked on Pipeline Groovy scripts and Docker deployment strategies. Additionally, I am well-versed in technologies like Node.js, MongoDB, Express.js, Next.js, React Native, and PWAs. My skills include testing methodologies using Jest, Enzyme, and Cypress, with a focus on developing secure and stable applications. I am dedicated to producing reusable and maintainable code.
+          {aboutText}
         </p>
         <div className="personalDetails">
           <table>

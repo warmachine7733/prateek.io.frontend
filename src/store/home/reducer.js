@@ -1,5 +1,6 @@
 const initialState = {
   loading: false,
+  aboutText: "I am a seasoned software developer with over 6 years and 1 month of experience in software development, specializing in web-based app development using technologies such as ReactJS, Redux, Material UI, Node.js, D3, npm, Firebase, Firestore, Bootstrap 4, and Context. My expertise spans various domains, including finance, telecom, social apps, HRM, property apps, and B2C app interactions for Verizon. I have a strong command of Git, Webpack 5, Babel, React Router v6, and have worked on Pipeline Groovy scripts and Docker deployment strategies. Additionally, I am well-versed in technologies like Node.js, MongoDB, Express.js, Next.js, React Native, and PWAs. My skills include testing methodologies using Jest, Enzyme, and Cypress, with a focus on developing secure and stable applications. I am dedicated to producing reusable and maintainable code.",
   mediumId: "@prateekjena7733",
   blogLoading: true,
   blogs: [],
@@ -20,26 +21,36 @@ const initialState = {
       {
         name: "Development Bank of Singapore",
         duration: "May'22 - Present",
+        jDate: '25/05/2022',
+        rDate: '',
         description: "Associate",
       },
       {
         name: "Cognizant",
         duration: "Jul'20 - Mar'22",
+        jDate: '14/07/2020',
+        rDate: '01/04/2022',
         description: "Associate Projects",
       },
       {
         name: "Sparity",
         duration: "Jul'19 - May'20",
+        jDate: '03/07/2019',
+        rDate: '06/05/2020',
         description: "Software Developer",
       },
       {
         name: "Freelancing",
         duration: "Dec'18 - May'19",
+        jDate: '25/12/2018',
+        rDate: '21/06/2019',
         description: "Software Developer",
       },
       {
         name: "PeopleLink Unified Communications Pvt. Ltd.",
         duration: "Sept'17 - Nov'18",
+        jDate: '04/09/2017',
+        rDate: '06/11/2018',
         description: "Software Developer",
       },
     ],

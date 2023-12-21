@@ -7,6 +7,7 @@ import { Career } from "../../components/Career";
 import { Blogs } from "../../components/Blogs";
 import { Contact } from "../../components/contact";
 import { connect } from "react-redux";
+import * as Utils from "../../Utils"
 
 
 import { getMediumPosts, ipLookUp } from "../../store/home/action";
@@ -118,6 +119,7 @@ class Home extends React.Component {
             <About
               openSocialAccount={this.openSocialAccount}
               socialIds={this.props.socialIds}
+              aboutText={this.props.aboutText}
             />
           </div>
           <div ref={(career) => (this.career = career)}>
@@ -150,6 +152,7 @@ class Home extends React.Component {
     window.addEventListener("scroll", this.handleScroll);
     //selected by default data
     this.showCareerData(this.state.selectedCareerTab);
+    this.setState({xp: Utils.calcCareerDuration(this.props.career)})
 
     this.props.ipLookUp();
     this.getAvailWindowHeight();
@@ -168,7 +171,8 @@ const mapStateToProps = (state) => {
     blogs: state.home.blogs,
     blogLoading: state.home.blogLoading,
     currentYear:state.home.currentYear,
-    particles:state.home.particleStyle
+    particles:state.home.particleStyle,
+    aboutText: state.home.aboutText
   };
 };
 const mapDispatchToProps = (dispatch) => {

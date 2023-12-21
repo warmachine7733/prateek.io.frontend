@@ -1,6 +1,9 @@
 .about {
   display: flex;
-  padding: 90px;
+  /* text-align: center; */
+  /* align-items: inherit; */
+  justify-content: flex-start;
+  padding: 2rem 20rem;
 }
 .imageContainer {
   float: left;
@@ -61,9 +64,10 @@
 
 @media (max-width: 700px) {
   .about {
-    padding: 50px;
-    text-align: center;
+    padding: 2.5rem;
+    font-size: smaller;
   }
+
   .imageContainer {
     height: 200px;
     width: 100%;
