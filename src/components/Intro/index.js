@@ -40,7 +40,7 @@ export class Intro extends React.Component {
           {/* <h1>I AM PRATEEK JENA,</h1> */}
           <h2>I am a Web Developer</h2><br/>
           {/* <h2>Web Developer</h2> */}
-          <img style={{ width: "15rem" }} src="/assets/spddnb.gif" alt="spidey"/>
+          {/* <img style={{ width: "15rem" }} src="/assets/spddnb.gif" alt="spidey"/> */}
         </div>
       </div>
       </>
