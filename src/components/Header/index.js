@@ -16,13 +16,12 @@ export const HeaderComponent = ({
   return (
     <>
       <Layout>
-        <Header
+        <Header style={{ display: 'flex', justifyContent: "space-between"}}
           className={
             headerStyle === "transparent" ? "headerTransparent" : "headerSolid"
           }
         >
-          <span>
-            <Text
+            <div
               className={
                 headerStyle === "transparent"
                   ? "userNameTransparent"
@@ -30,9 +29,8 @@ export const HeaderComponent = ({
               }
             >
               prateek.io
-            </Text>
-          </span>
-          <span style={{ position: "relative", left: "55%" }}>
+            </div>
+          <span >
             {hyperLinks.map((each, i) => (
               <Text
                 onClick={() => handleFocus(each)}
