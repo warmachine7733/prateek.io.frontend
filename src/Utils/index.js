@@ -15,5 +15,5 @@ const duration = (jDate, rDate) => {
     var months = Math.floor(numberOfDays % 365 / 30);
     var days = Math.floor(numberOfDays % 365 % 30);
 
-    return years + ` year${years > 0 && 's '}` +   months + ' months ' + days + ' days'
+    return years + ` year${years > 0 && 's '}` +   months + ' months '
 }

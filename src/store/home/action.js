@@ -13,27 +13,17 @@ export const storeBlogs = (data) => {
 };
 export const getMediumPosts = () => {
   return async (dispatch, getState) => {
-    //   dispatch(handleLoading(true));
     try {
-      
       dispatch(handleBlogLoading(true));
-      
-      // const result = await axios.get(
-      //   "https://shielded-earth-72166.herokuapp.com/getBlogsFromDb"
-      // );
       const result = await axios.get(
         "https://prateek-io-server.vercel.app/getBlogsFromDb"
       );
       const blogs = result.data;
-      // console.log("blogs", blogs);
       dispatch(storeBlogs(blogs));
       dispatch(handleBlogLoading(false));
     } catch (error) {
       console.log(console.error);
     }
-
-    //   let { data } = result;
-    //   dispatch({ type: "SAVE_LOADED_IMAGE", data });
   };
 };
 
@@ -45,9 +35,10 @@ export const ipLookUp = () => {
       "https://prateek-io-server.vercel.app/storeIpAndLocation",
       { ip }
     );
-    // await axios.post(
-    //   "http://localhost:9000/storeIpAndLocation",
-    //   { ip }
-    // );
+  };
+};
+export const xpUpdate = (data) => {
+  return (dispatch) => {
+    dispatch({ type: "XP_UPDATE", data });
   };
 };

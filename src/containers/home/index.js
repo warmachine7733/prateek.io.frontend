@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 import * as Utils from "../../Utils"
 
 
-import { getMediumPosts, ipLookUp } from "../../store/home/action";
+import { getMediumPosts, ipLookUp, xpUpdate } from "../../store/home/action";
 class Home extends React.Component {
   state = {
     headerStyle: "transparent",
@@ -152,7 +152,7 @@ class Home extends React.Component {
     window.addEventListener("scroll", this.handleScroll);
     //selected by default data
     this.showCareerData(this.state.selectedCareerTab);
-    this.setState({xp: Utils.calcCareerDuration(this.props.career)})
+    this.props.xpUpdate(Utils.calcCareerDuration(this.props.career))
 
     this.props.ipLookUp();
     this.getAvailWindowHeight();
@@ -176,6 +176,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     getMediumPosts: () => dispatch(getMediumPosts()),
     ipLookUp: () => dispatch(ipLookUp()),
+    xpUpdate: (args) => dispatch(xpUpdate(args))
   };
 };
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
