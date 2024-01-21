@@ -39,13 +39,13 @@ const initialState = {
         rDate: '06/05/2020',
         description: "Software Developer",
       },
-      {
-        name: "Freelancing",
-        duration: "Dec'18 - May'19",
-        jDate: '25/12/2018',
-        rDate: '21/06/2019',
-        description: "Software Developer",
-      },
+      // {
+      //   name: "Freelancing",
+      //   duration: "Dec'18 - May'19",
+      //   jDate: '25/12/2018',
+      //   rDate: '21/06/2019',
+      //   description: "Software Developer",
+      // },
       {
         name: "PeopleLink Unified Communications Pvt. Ltd.",
         duration: "Sept'17 - Nov'18",

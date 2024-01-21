@@ -157,10 +157,7 @@ class Home extends React.Component {
     this.props.ipLookUp();
     this.getAvailWindowHeight();
     this.props.getMediumPosts();
-    // const socket = socketIOClient('http://localhost:8180/');
-    // socket.on("connection",() => {
-    //   console.log("okau socket data")
-    // });
+
   }
 }
 
