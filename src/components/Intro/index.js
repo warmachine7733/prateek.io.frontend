@@ -21,8 +21,8 @@ export const Intro = (props) => {
       setIntro(initialState.whoami[currentIndex]);
       currentIndex = (currentIndex + 1) % initialState.whoami.length;
     }
-    // Set interval to run the printRole function every 9 second 9000 milliseconds)
-    setInterval(printRole, 9000);
+    // Set interval to run the printRole function every 5 second 9000 milliseconds)
+    setInterval(printRole, 5000);
   };
   return (
     <div className="intro" style={{ height: props.availHeight }}>
