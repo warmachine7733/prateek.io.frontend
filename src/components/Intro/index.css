@@ -72,6 +72,6 @@
   }
   .caption > h2 {
     font-size: 14px;
-    max-width: 220px;
+    max-width: fit-content;
   }
 }
