@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadFull } from "tsparticles";
+import { loadSlim } from "@tsparticles/slim";
 import particlesOptions from "../../assets/particles.json";
 
 function ParticlesWrap() {
@@ -12,7 +12,7 @@ function ParticlesWrap() {
     }
 
     initParticlesEngine(async (engine) => {
-      await loadFull(engine);
+      await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
