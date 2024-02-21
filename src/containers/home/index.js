@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HeaderComponent } from "../../components/Header";
-import { Intro } from "../../components/Intro";
+import  Intro  from "../../components/Intro";
 import { About } from "../../components/About";
 import { Career } from "../../components/Career";
 import { Blogs } from "../../components/Blogs";
