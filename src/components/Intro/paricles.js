@@ -16,7 +16,7 @@ function ParticlesWrap() {
     }).then(() => {
       setInit(true);
     });
-  }, []);
+  }, [init]);
 
   return (
     <div className="">
