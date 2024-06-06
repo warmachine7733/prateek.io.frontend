@@ -20,10 +20,17 @@ const initialState = {
   career: {
     work: [
       {
-        name: "Development Bank of Singapore",
-        duration: "May'22 - Present",
-        jDate: "25/05/2022",
+        name: "NTT Data",
+        duration: "feb'24 - Present",
+        jDate: "19/02/2024",
         rDate: "",
+        description: "Digital Engineering Lead Engineer",
+      },
+      {
+        name: "Development Bank of Singapore",
+        duration: "May'22 - Jan'24",
+        jDate: "25/05/2022",
+        rDate: "25/01/2024",
         description: "Associate",
       },
       {
