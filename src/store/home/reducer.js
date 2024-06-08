@@ -20,7 +20,7 @@ const initialState = {
   career: {
     work: [
       {
-        name: "NTT Data",
+        name: "Launch by NTT Data",
         duration: "feb'24 - Present",
         jDate: "19/02/2024",
         rDate: "",
