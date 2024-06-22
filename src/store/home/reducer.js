@@ -1,6 +1,7 @@
 const initialState = {
   loading: false,
   xp: "",
+  gLoader: false,
   aboutText: `I am a seasoned software developer with over timestamp of experience in software development, specializing in web-based app development using technologies such as ReactJS, Redux, Material UI, Node.js, D3, npm, Firebase, Firestore, Bootstrap 4, and Context. My expertise spans various domains, including finance, telecom, social apps, HRM, property apps, and B2C app interactions for Verizon. I have a strong command of Git, Webpack 5, Babel, React Router v6, and have worked on Pipeline Groovy scripts and Docker deployment strategies. Additionally, I am well-versed in technologies like Node.js, MongoDB, Express.js, Next.js, React Native, and PWAs. My skills include testing methodologies using Jest, Enzyme, and Cypress, with a focus on developing secure and stable applications. I am dedicated for producing reusable and maintainable code.`,
   mediumId: "@prateekjena7733",
   blogLoading: true,
@@ -209,7 +210,13 @@ export const home = (state = initialState, action) => {
     case "STORE_BLOGS":
       return { ...state, blogs: action.data };
     case "XP_UPDATE":
-      return { ...state, xp: action.data, aboutText: state.aboutText.replace('timestamp', action.data)}  
+      return {
+        ...state,
+        xp: action.data,
+        aboutText: state.aboutText.replace("timestamp", action.data),
+      };
+    case "G_LOADER":
+      return { ...state, gLoader: action.data };
     default:
       return state;
   }
