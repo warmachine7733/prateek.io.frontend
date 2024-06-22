@@ -1,5 +1,5 @@
 import axios from "axios";
-import publicIp from "public-ip";
+import { publicIpv4 } from "public-ip";
 
 export const handleBlogLoading = (data) => {
   return (dispatch) => {
@@ -29,7 +29,7 @@ export const getMediumPosts = () => {
 
 export const ipLookUp = () => {
   return async (dispatch, getState) => {
-    var ip = await publicIp.v4();
+    var ip = await publicIpv4();
     // lookup hit
     await axios.post(
       "https://prateek-io-server.vercel.app/storeIpAndLocation",
@@ -40,5 +40,11 @@ export const ipLookUp = () => {
 export const xpUpdate = (data) => {
   return (dispatch) => {
     dispatch({ type: "XP_UPDATE", data });
+  };
+};
+
+export const setGlobalLoader = (data) => {
+  return (dispatch) => {
+    dispatch({ type: "G_LOADER", data });
   };
 };
