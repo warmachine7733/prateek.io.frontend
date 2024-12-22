@@ -13,14 +13,13 @@
   top: 42%;
   position: absolute;
 }
-
-.caption>h4 {
+.caption > h4 {
   margin-bottom: 30px;
   color: #d6b161;
   font-size: 30px;
 }
 
-.caption>h1 {
+.caption > h1 {
   margin-bottom: 30px;
   font-weight: 400;
   letter-spacing: 1px;
@@ -28,8 +27,7 @@
   font-size: 60px;
   color: #fff;
 }
-
-.caption>h2 {
+.caption > h2 {
   margin-bottom: 30px;
   font-weight: 100;
   max-width: fit-content;
@@ -47,51 +45,33 @@
   border-right: 4px solid orange;
   box-sizing: border-box;
 }
-
 @keyframes typing {
   from {
     width: 0%;
   }
-
   to {
     width: 100%;
   }
 }
 
 @keyframes blink {
-
   from,
   to {
     border-color: transparent;
   }
-
   50% {
     border-color: orange;
   }
 }
-
 @media (max-width: 700px) {
-  .caption>h4 {
+  .caption > h4 {
     font-size: 25px;
   }
-
-  .caption>h1 {
+  .caption > h1 {
     font-size: 30px;
   }
-
-  .caption>h2 {
+  .caption > h2 {
     font-size: 14px;
     max-width: fit-content;
   }
-}
-
-.gloaderWrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: center;
-  height: 100vh;
-  position: relative;
-  z-index: 100;
-  background: rebeccapurple;
 }
