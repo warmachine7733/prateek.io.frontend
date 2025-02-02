@@ -1,7 +1,7 @@
 const initialState = {
   loading: false,
   xp: "",
-  aboutText: `I am a seasoned software developer with over timestamp of experience in software development, specializing in web-based app development using technologies such as ReactJS, Redux, Material UI, Node.js, D3, npm, Firebase, Firestore, Bootstrap 4, and Context. My expertise spans various domains, including finance, telecom, social apps, HRM, property apps, and B2C app interactions for Verizon. I have a strong command of Git, Webpack 5, Babel, React Router v6, and have worked on Pipeline Groovy scripts and Docker deployment strategies. Additionally, I am well-versed in technologies like Node.js, MongoDB, Express.js, Next.js, React Native, and PWAs. My skills include testing methodologies using Jest, Enzyme, and Cypress, with a focus on developing secure and stable applications. I am dedicated for producing reusable and maintainable code.`,
+  aboutText: `Hello, I'm a software developer with timestamp of experience specializing in web-based application development. My skill set encompasses a broad spectrum of technologies including ReactJS, Redux, Node.js, and Firebase, with domain expertise in areas like finance, telecom, and HR management. I excel in creating efficient, secure, and maintainable code, backed by strong capabilities in both front-end and back-end development, along with expertise in Git, Docker, and modern testing frameworks.`,
   mediumId: "@prateekjena7733",
   blogLoading: true,
   blogs: [],
