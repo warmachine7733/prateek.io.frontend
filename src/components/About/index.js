@@ -28,7 +28,7 @@ export const About = ({aboutText}) => {
                 </td>
                 <td>
                   <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  <Text>Betnoti,Odisha,India</Text>
+                  <Text>India</Text>
                 </td>
               </tr>
               <tr className="tableRow">
