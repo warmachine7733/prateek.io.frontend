@@ -8,6 +8,10 @@ const initialState = {
   currentYear: new Date().getFullYear(),
   socialIds: [
     {
+      name: "linkedin",
+      link: "https://www.linkedin.com/in/prateek-jena-5205032b1",
+    },
+    {
       name: "stack-overflow",
       link: "https://stackoverflow.com/users/8932033/warmachine",
     },
@@ -15,6 +19,7 @@ const initialState = {
       name: "medium",
       link: "https://medium.com/@prateekjena7733",
     },
+
   ],
 
   career: {
