@@ -1,6 +1,5 @@
 import React from "react";
 import Snowfall from "react-snowfall";
-// import ParticlesWrap from "./paricles";
 import "./index.css";
 import IntroText from "./IntroText";
 
