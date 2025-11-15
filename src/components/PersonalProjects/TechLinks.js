@@ -2,7 +2,6 @@ import React from 'react';
 
 const TechLinks = ({ values }) => {
     const { live, github } = values
-    console.log(5, values);
     return (
         <div className='tech-links-wrapper'>
             <div className='project-links'>

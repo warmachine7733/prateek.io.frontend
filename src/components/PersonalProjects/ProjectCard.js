@@ -3,7 +3,6 @@ import TechStacks from "./TechStacks";
 import TechLinks from "./TechLinks";
 const ProjectCard = ({ projectDetails }) => {
     const { title, description, techStack, image, techLinks } = projectDetails
-    console.log(6, techLinks)
     return (
         <div className="project-card">
             <div className="image-desc-wrapper">
