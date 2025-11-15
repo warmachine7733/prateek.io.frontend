@@ -18,7 +18,7 @@ export const personalProjects = [
         id: 2,
         title: "Newsletter App",
         description:
-            "A simple newsletter system with subscription, email storage, and delivery workflow.",
+            "A simple news search app by keywords.",
         techStack: ["React", "Redux"],
         image: "https://portfolio-asset-files.s3.ap-northeast-1.amazonaws.com/news-lister-app.png",
         techLinks: {
