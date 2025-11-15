@@ -4,7 +4,8 @@ import { Layout, Typography } from "antd";
 
 const { Header } = Layout;
 const { Text } = Typography;
-const hyperLinks = ["Home", "About", "Career", "Blogs", "Contact"];
+// const hyperLinks = ["Home", "About", "Career", "Blogs", "Contact"];
+const hyperLinks = [];
 
 export const HeaderComponent = ({
   headerStyle,

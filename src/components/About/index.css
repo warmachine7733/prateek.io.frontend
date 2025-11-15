@@ -1,16 +1,12 @@
 .about {
   display: flex;
-  /* text-align: center; */
-  /* align-items: inherit; */
   justify-content: flex-start;
-  padding: 2rem 20rem;
+  padding: 2rem 10rem;
 }
 .imageContainer {
   float: left;
   width: 35%;
   height: 350px;
-  /* height: 56%; */
-  /* border: 1px solid black; */
   padding: 50px;
 }
 .imageContainer > img {
@@ -25,8 +21,8 @@
   float: left;
   width: 65%;
   height: 100%;
-  /* border: 1px solid black; */
 }
+
 .detailsContainer > h4 {
   font-size: 30px;
   margin-bottom: 30px;
@@ -52,8 +48,8 @@
 }
 .tableRow {
   text-align: left;
-  padding: 20px;
 }
+
 .tableRow > td > i {
   padding-right: 10px;
 }

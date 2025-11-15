@@ -29,12 +29,12 @@ export const getMediumPosts = () => {
 
 export const ipLookUp = () => {
   return async (dispatch, getState) => {
-    var ip = await publicIpv4();
+    // var ip = await publicIpv4();
     // lookup hit
-    await axios.post(
-      "https://prateek-io-server.vercel.app/storeIpAndLocation",
-      { ip }
-    );
+    // await axios.post(
+    //   "https://prateek-io-server.vercel.app/storeIpAndLocation",
+    //   { ip }
+    // );
   };
 };
 export const xpUpdate = (data) => {

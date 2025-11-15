@@ -1,16 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HeaderComponent } from "../../components/Header";
-import  Intro  from "../../components/Intro";
+import Intro from "../../components/Intro";
 import { About } from "../../components/About";
 import { Career } from "../../components/Career";
 import { Blogs } from "../../components/Blogs";
 import { Contact } from "../../components/contact";
+import PersonalProjects from "../../components/PersonalProjects";
 import { connect } from "react-redux";
 import * as Utils from "../../Utils"
 
 
 import { getMediumPosts, ipLookUp, xpUpdate } from "../../store/home/action";
+
 class Home extends React.Component {
   state = {
     headerStyle: "transparent",
@@ -18,7 +20,7 @@ class Home extends React.Component {
     textThemeColor: "#d6b161",
     selectedCareerTab: "work",
     selectedCareerData: [],
-    endPoint:'http://127.0.0.1:9000'
+    endPoint: 'http://127.0.0.1:9000'
   };
   handleScroll = () => {
     // console.log("scrolldata", window.scrollY);
@@ -102,9 +104,9 @@ class Home extends React.Component {
           textThemeColor={this.state.textThemeColor}
         />
         <div ref={(home) => (this.home = home)}>
-          <Intro 
-            availHeight={this.state.availHeight} 
-            particles ={this.props.particles}
+          <Intro
+            availHeight={this.state.availHeight}
+            particles={this.props.particles}
           />
         </div>
 
@@ -129,11 +131,14 @@ class Home extends React.Component {
               selectedCareerData={this.state.selectedCareerData}
             />
           </div>
+          <div ref={(personalProjects) => (this.personalProjects = personalProjects)}>
+            <PersonalProjects/>
+          </div>
           <div ref={(blogs) => (this.blogs = blogs)}>
             <Blogs
               blogs={this.props.blogs}
               blogLoading={this.props.blogLoading}
-              history = {this.props.history}
+              history={this.props.history}
             />
           </div>
           <div ref={(contact) => (this.contact = contact)}>
@@ -167,8 +172,8 @@ const mapStateToProps = (state) => {
     socialIds: state.home.socialIds,
     blogs: state.home.blogs,
     blogLoading: state.home.blogLoading,
-    currentYear:state.home.currentYear,
-    particles:state.home.particleStyle,
+    currentYear: state.home.currentYear,
+    particles: state.home.particleStyle,
     aboutText: state.home.aboutText
   };
 };

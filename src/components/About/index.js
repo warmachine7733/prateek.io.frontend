@@ -38,7 +38,7 @@ export const About = ({aboutText}) => {
                 </td>
                 <td>
                   <i className="fa fa-phone" aria-hidden="true"></i>
-                  <Text><a href="tel:+91-7008398596">+91-7008398596</a></Text>
+                  <Text><a href="tel:+91-8618248104">+91-8618248104</a></Text>
                 </td>
                 {/* <td>
                   <i className="fa fa-briefcase" aria-hidden="true"></i>
