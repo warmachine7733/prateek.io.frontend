@@ -8,7 +8,7 @@ export const personalProjects = [
         description:
             "A dashboard tool that tracks package versions across your apps and detects updates easily.",
         techStack: ["React", "JavaScript", "npm"],
-        image: "/assets/package-tracker-app.png",
+        image: "https://portfolio-asset-files.s3.ap-northeast-1.amazonaws.com/package-tracker-app.png",
         techLinks: {
             live: "https://pkg-json-trails.vercel.app",
             github: "https://github.com/warmachine7733/pkg-json-trails",
@@ -20,7 +20,7 @@ export const personalProjects = [
         description:
             "A simple newsletter system with subscription, email storage, and delivery workflow.",
         techStack: ["React", "Redux"],
-        image: "/assets/news-lister-app.png",
+        image: "https://portfolio-asset-files.s3.ap-northeast-1.amazonaws.com/news-lister-app.png",
         techLinks: {
             live: "https://newsletter-pagination-news.vercel.app",
             github: "https://github.com/warmachine7733/newsletter--pagination-news",
@@ -32,7 +32,7 @@ export const personalProjects = [
         description:
             "Personal developer portfolio showcasing career, blogs, and personal projects.",
         techStack: ["React", "JavaScript", "Redux", "Node.js"],
-        image: "/assets/portfolio.png",
+        image: "https://portfolio-asset-files.s3.ap-northeast-1.amazonaws.com/portfolio.png",
         techLinks: {
             live: "https://prateekio.vercel.app",
             github: "https://github.com/warmachine7733/prateek.io.frontend",
@@ -44,7 +44,7 @@ export const personalProjects = [
         description:
             "A fast CLI tool to scaffold React apps with Webpack.",
         techStack: ["Npm", "JavaScript"],
-        image: "/assets/wp-react-cli.png",
+        image: "https://portfolio-asset-files.s3.ap-northeast-1.amazonaws.com/wp-react-cli.png",
         techLinks: {
             live: "https://www.npmjs.com/package/wp-react-cli",
             github: "https://github.com/warmachine7733/wp-react-cli",
