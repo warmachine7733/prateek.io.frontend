@@ -30,12 +30,13 @@
 }
 
 .projects-wrapper {
+    column-gap: 20%;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
     justify-content: center;
-    max-width: 900px;
     margin: 0 auto;
+    max-width: 900px;
+    row-gap: 24px;
 }
 
 .project-card {

@@ -11,7 +11,7 @@ export const Contact = ({ socialIds, openSocialAccount,currentYear }) => {
         {socialIds.map((each, i) => (
           <i
             key={i}
-            className={`fa fa-${each.name}`}
+            className={`fa-brands fa-${each.name}`}
             onClick={() => openSocialAccount(each.name)}
           ></i>
         ))}
