@@ -2,9 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { HeaderComponent } from "../../components/Header";
 import Intro from "../../components/Intro";
-import { About } from "../../components/About";
+import { About, Blogs } from "../../components";
 import { Career } from "../../components/Career";
-import { Blogs } from "../../components/Blogs";
 import { Contact } from "../../components/contact";
 import PersonalProjects from "../../components/PersonalProjects";
 import { connect } from "react-redux";
@@ -137,8 +136,7 @@ class Home extends React.Component {
           <div ref={(blogs) => (this.blogs = blogs)}>
             <Blogs
               blogs={this.props.blogs}
-              blogLoading={this.props.blogLoading}
-              history={this.props.history}
+              isBlogLoading={this.props.blogLoading}
             />
           </div>
           <div ref={(contact) => (this.contact = contact)}>

@@ -7,28 +7,18 @@ export const BlogLoading = () => {
         <div className="wrapper-cell">
           <div className="text">
             <div className="text-line"> </div>
-            {/* <div className="text-line"></div>
-            <div className="text-line"></div>
-            <div className="text-line"></div> */}
-          </div>
-          <div className="image"></div>
-        </div>
-
-        <div className="wrapper-cell">
-          <div className="text">
-            <div className="text-line"></div>
-            {/* <div className="text-line"></div>
-            <div className="text-line"></div>
-            <div className="text-line"></div> */}
           </div>
           <div className="image"></div>
         </div>
         <div className="wrapper-cell">
           <div className="text">
             <div className="text-line"></div>
-            {/* <div className="text-line"></div>
+          </div>
+          <div className="image"></div>
+        </div>
+        <div className="wrapper-cell">
+          <div className="text">
             <div className="text-line"></div>
-            <div className="text-line"></div> */}
           </div>
           <div className="image"></div>
         </div>

@@ -1,12 +1,12 @@
 import React from "react";
-import "./index.css";
 import { Typography } from "antd";
-import { IAboutProps } from "./types";
+import { IAbout } from "./types";
 import messages  from "./messages";
+import "./index.css";
 
 const { Text } = Typography;
 
-export const About = ({aboutText}: IAboutProps) => {
+const About = ({aboutText}: IAbout) => {
   return (
     <div className="about">
       <div className="">
@@ -45,3 +45,5 @@ export const About = ({aboutText}: IAboutProps) => {
     </div>
   );
 };
+
+export default About;

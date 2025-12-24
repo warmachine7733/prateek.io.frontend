@@ -1,22 +1,19 @@
 import React from "react";
 import { BlogLoading } from "./BlogLoading";
+import { IBlogs } from "./types";
+import messages from "./messages";
 import "./index.css";
 
-
-
-export const Blogs = ({ blogs, blogLoading ,history}) => {
-  // console.log(blogLoading, blogs);
-  const openPost = (link) => {
+const Blogs = ({ blogs, isBlogLoading}: IBlogs) => {
+  const openPost = (link: string) => {
     window.open(link, "_blank");
-    // console.log("history",history)
-    // history.push('/blogs')
   
   };
   return (
     <div className="blogsWrapper">
-      <h4>Blogs</h4>
+      <h4>{messages.blogsHeader}</h4>
       <div className="blogData">
-        {blogLoading ? (
+        {isBlogLoading ? (
           <BlogLoading />
         ) : (
           blogs.map((each, i) => (
@@ -28,7 +25,6 @@ export const Blogs = ({ blogs, blogLoading ,history}) => {
               <div className="blogDescription">
                 <div className="blogTitle">{each.title}</div>
                 <div className="blogInfoWrapper">
-                  {/* <div className="blogStacks">tags - React,Node,Mongo.</div> */}
                   <div className="blogTimeStamp">{each.pubDate}</div>
                 </div>
               </div>
@@ -42,3 +38,5 @@ export const Blogs = ({ blogs, blogLoading ,history}) => {
     </div>
   );
 };
+
+export default Blogs;

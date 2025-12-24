@@ -1,1 +1,1 @@
-export { default as IAboutProps } from './IAboutProps';
+export { default as IAbout } from './IAbout';
