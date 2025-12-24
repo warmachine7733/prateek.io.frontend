@@ -3,6 +3,12 @@
   justify-content: flex-start;
   padding: 0px 20%;
 }
+.about-text {
+  font-size: 20px;
+}
+.tel-href {
+  text-decoration: none;
+}
 .imageContainer {
   float: left;
   width: 35%;
@@ -42,6 +48,7 @@
 }
 .personalDetails {
   margin-top: 50px;
+  font-size: 20px;
 }
 .personalDetails > table {
   width: 100%;
@@ -54,6 +61,7 @@
   padding-right: 10px;
 }
 .tableRow > td {
+  font-size: 16px;
   padding-top: 20px;
   max-width: 40px;
 }
@@ -62,6 +70,10 @@
   .about {
     padding: 2.5rem;
     font-size: smaller;
+  }
+
+  .about-text {
+    font-size: 16px;
   }
 
   .imageContainer {
