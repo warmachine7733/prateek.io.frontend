@@ -23,45 +23,35 @@
   width: 70px;
 }
 .togglerContainer {
-  /* width: 80%; */
-  /* border: 1px solid; */
   text-align: -webkit-center;
 }
-/* .togglerContainer > div {
-  float: left;
-} */
+
 .toggleIcons {
   text-align: -webkit-center;
 }
-.toggleIcons > table > tbody > tr {
-}
+
 .expTab {
-  /* padding: 5px 20px 5px 0px; */
-  display: inline-block;
-  padding: 4px 30px;
   background: #444;
+  border-radius: 30px 0px 0px 30px;
   color: #fff;
-  border-radius: 30px;
-  margin: 0 -2px;
   cursor: pointer;
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
+  display: inline-block;
+  line-height: 1.57;
+  margin: 0 -2px;
+  padding: 4px 30px;
 }
 .expTab > span {
   color: #fff !important;
 }
 .eduTab {
-  /* padding: 5px 0px 5px 20px;
-  padding: 5px 20px 5px 0px; */
-  display: inline-block;
-  padding: 4px 30px;
   background: #444;
+  border-radius: 0 30px 30px 0;
   color: #fff;
-  border-radius: 30px;
-  margin: 0 -2px;
   cursor: pointer;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
+  display: inline-block;
+  line-height: 1.57;
+  margin: 0 -2px;
+  padding: 4px 30px;
 }
 .eduTab > span {
   color: #fff !important;

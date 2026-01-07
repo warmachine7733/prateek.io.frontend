@@ -1,18 +1,17 @@
 import React from "react";
-import "./index.css";
-import { Typography } from "antd";
 import CarrerSteps from "./careerSteps";
-
-const { Text } = Typography;
+import { ICareer } from "./types";
+import messages from "./messages";
+import "./index.css";
 
 export const Career = ({
   selectedCareerTab,
   showCareerData,
   selectedCareerData,
-}) => {
+}: ICareer) => {
   return (
     <div className="resumeContainer">
-      <h4>Career</h4>
+      <h4>{messages.Career}</h4>
       <div className="togglerContainer">
         <div className="toggleIcons">
           <table>
@@ -32,7 +31,7 @@ export const Career = ({
                     style={{ paddingRight: "4px" }}
                     aria-hidden="true"
                   ></i>
-                  <Text>Experience</Text>
+                  <span>{messages.Experience}</span>
                 </td>
                 <td
                   className="eduTab"
@@ -48,7 +47,7 @@ export const Career = ({
                     style={{ paddingRight: "4px" }}
                     aria-hidden="true"
                   ></i>
-                  <Text>Education</Text>
+                  <span>{messages.Education}</span>
                 </td>
               </tr>
             </tbody>

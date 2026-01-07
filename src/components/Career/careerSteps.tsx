@@ -1,10 +1,11 @@
 import React from "react";
 import { Steps } from "antd";
+import { ISelectedCareerData } from "./types";
 import "./index.css";
 
 const { Step } = Steps;
 
-const CareerSteps = ({ selectedCareerData }) => {
+const CareerSteps = ({ selectedCareerData }: {selectedCareerData:  ISelectedCareerData[] } ) => {
   return (
     <Steps
       className="stepsContainer"
@@ -14,11 +15,11 @@ const CareerSteps = ({ selectedCareerData }) => {
     >
       {selectedCareerData.map((each) => (
         <Step
-          title={each.name}
-          key={each.name}
-          subTitle={each.duration}
-          status="finish"
           description={each.description}
+          key={each.name}
+          status="finish"
+          subTitle={each.duration}
+          title={each.name}
         />
       ))}
     </Steps>
