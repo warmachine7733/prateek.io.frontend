@@ -37,10 +37,11 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.socialIcon > i:hover {
+.socialIcon:hover {
   color: #d6b161;
   background-color: white;
 } */
+
 .techStack {
   width: 100%;
   display: flow-root;

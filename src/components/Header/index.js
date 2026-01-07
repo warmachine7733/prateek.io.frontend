@@ -66,7 +66,7 @@ export const HeaderComponent = ({
 
                 onClick={() => openSocialAccount(each.name)}
               >
-                <FontAwesomeIcon icon={each.icon} style={{ height: "25px", width: "25px", color: '#EFBF04' }} />
+                <FontAwesomeIcon icon={each.icon} className="socialIcons" />
               </span>
             ))}
           </div>
