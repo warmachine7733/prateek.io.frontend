@@ -100,6 +100,8 @@ class Home extends React.Component {
           handleFocus={this.handleFocus}
           selectedNavLink={this.state.selectedNavLink}
           textThemeColor={this.state.textThemeColor}
+          openSocialAccount={this.openSocialAccount}
+          socialIds={this.props.socialIds}
         />
         <div ref={(home) => (this.home = home)}>
           <Intro
@@ -130,7 +132,7 @@ class Home extends React.Component {
             />
           </div>
           <div ref={(personalProjects) => (this.personalProjects = personalProjects)}>
-            <PersonalProjects/>
+            <PersonalProjects />
           </div>
           <div ref={(blogs) => (this.blogs = blogs)}>
             <Blogs
@@ -140,8 +142,6 @@ class Home extends React.Component {
           </div>
           <div ref={(contact) => (this.contact = contact)}>
             <Contact
-              openSocialAccount={this.openSocialAccount}
-              socialIds={this.props.socialIds}
               currentYear={this.props.currentYear}
             />
           </div>

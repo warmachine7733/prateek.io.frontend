@@ -1,6 +1,8 @@
 import React from "react";
-import "./index.css";
 import { Layout, Typography } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index.css";
+
 
 const { Header } = Layout;
 const { Text } = Typography;
@@ -12,7 +14,8 @@ export const HeaderComponent = ({
   handleFocus,
   selectedNavLink,
   textThemeColor,
-  Ip,
+  socialIds,
+  openSocialAccount
 }) => {
   return (
     <>
@@ -56,6 +59,17 @@ export const HeaderComponent = ({
               </Text>
             ))}
           </span>
+          <div className="socialIcon">
+            {socialIds.map((each, i) => (
+              <span
+                key={i}
+
+                onClick={() => openSocialAccount(each.name)}
+              >
+                <FontAwesomeIcon icon={each.icon} style={{ height: "25px", width: "25px", color: '#EFBF04' }} />
+              </span>
+            ))}
+          </div>
         </Header>
       </Layout>
     </>

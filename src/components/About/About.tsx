@@ -3,6 +3,7 @@ import { IAbout } from "./types";
 import messages  from "./messages";
 import "./index.css";
 
+
 const About = ({aboutText}: IAbout) => {
   return (
     <div className="about">
@@ -11,6 +12,7 @@ const About = ({aboutText}: IAbout) => {
       <div className="about-text">
         <p>
           {aboutText}
+        
         </p>
         <div className="personalDetails">
           <table>

@@ -1,3 +1,4 @@
+import { faLinkedin, faStackOverflow, faMedium } from "@fortawesome/free-brands-svg-icons";
 const initialState = {
   loading: false,
   xp: "",
@@ -9,15 +10,18 @@ const initialState = {
   socialIds: [
     {
       name: "linkedin",
+      icon: faLinkedin,
       link: "https://www.linkedin.com/in/prateek-jena-5205032b1",
     },
     {
-      name: "stack-overflow",
-      link: "https://stackoverflow.com/users/8932033/warmachine",
+      name: "medium",
+      icon: faMedium,
+      link: "https://medium.com/@prateekjena7733",
     },
     {
-      name: "medium",
-      link: "https://medium.com/@prateekjena7733",
+      name: "stack-overflow",
+      icon: faStackOverflow,
+      link: "https://stackoverflow.com/users/8932033/warmachine",
     },
 
   ],
@@ -99,7 +103,7 @@ export const home = (state = initialState, action) => {
     case "STORE_BLOGS":
       return { ...state, blogs: action.data };
     case "XP_UPDATE":
-      return { ...state, xp: action.data, aboutText: state.aboutText.replace('timestamp', action.data)}  
+      return { ...state, xp: action.data, aboutText: state.aboutText.replace('timestamp', action.data) }
     default:
       return state;
   }
