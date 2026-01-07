@@ -2,7 +2,7 @@ import { faLinkedin, faStackOverflow, faMedium } from "@fortawesome/free-brands-
 const initialState = {
   loading: false,
   xp: "",
-  aboutText: `Hello, I'm a software developer with timestamp of experience specializing in web-based application development. My skill set encompasses a broad spectrum of technologies including ReactJS, Redux, Node.js, and Firebase, with domain expertise in areas like finance, telecom, and HR management. I excel in creating efficient, secure, and maintainable code, backed by strong capabilities in both front-end and back-end development, along with expertise in Git, Docker, and modern testing frameworks.`,
+  aboutText: `Hello, I'm a software developer with timestamp of experience specializing in web application development. I work across a broad technology stack including React, Redux, Node.js, and Firebase, with domain experience in finance, telecom, and HR systems. I focus on building efficient, secure, and maintainable software, and I’m comfortable working across both frontend and backend, with strong experience in Git, Docker, and modern testing practices.`,
   mediumId: "@prateekjena7733",
   blogLoading: true,
   blogs: [],
