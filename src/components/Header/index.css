@@ -80,13 +80,13 @@
 }
 
 .socialIcons {
+  color: #EFBF04;
   height: 25px;
   width: 25px;
-  color: #EFBF04
 }
 
 .socialIcons:hover {
-  color: #d6b161;
   background-color: rgb(119, 31, 233);
+  color: #d6b161;
   cursor: pointer;
 }
